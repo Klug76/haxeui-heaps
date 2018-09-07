@@ -71,6 +71,7 @@ class ComponentBase {
     public function createTextDisplay(text:String = null):TextDisplay {
         if (_textDisplay == null) {
             _textDisplay = new TextDisplay();
+			_textDisplay.parentComponent = cast this;
             sprite.addChild(_textDisplay.sprite);
         }
         if (text != null) {

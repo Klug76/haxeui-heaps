@@ -178,7 +178,8 @@ class StyleHelper
         if (hxf == null && nativeFilter == null) {
             return true;
         }
-
+		return false;
+		/*
         return switch (Type.getClass(hxf)) {
             case DropShadow:
                 var ds:DropShadow = cast(hxf, DropShadow);
@@ -201,5 +202,6 @@ class StyleHelper
             default:
                 false;
         }
+		*/
     }
 }
